@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Update EPG Files
       run: |
-        rm -f e.xml && wget https://raw.githubusercontent.com/sparkssssssssss/epg/main/pp.xml -O e.xml
+        rm -f e.xml && wget http://epg.51zmt.top:8000/e.xml -O e.xml
         git config --local user.name "github-actions[bot]"
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git pull origin main
